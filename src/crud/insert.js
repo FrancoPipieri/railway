@@ -36,7 +36,6 @@ const insertProducts = async () => {
         ];
 
         await database("products").insert(products);
-
         console.log("products inserted!");
 
         database.destroy();

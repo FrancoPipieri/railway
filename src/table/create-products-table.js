@@ -13,7 +13,7 @@ const createProductsTable = async () => {
             prodTable.increments("id").primary();
         });
         console.log("products table created!");
-        database.destroy();
+        
 
     } catch (err) {
         console.log(err);

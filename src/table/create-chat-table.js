@@ -13,7 +13,7 @@ const createProductsTable = async () => {
             chatTable.increments("id").primary();
         });
         console.log("chat table created!");
-        sqliteDatabase.destroy();
+        
 
     } catch (err) {
         console.log(err);
