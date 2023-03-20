@@ -107,7 +107,7 @@ if (cluster.isPrimary && params.mode.toUpperCase() === 'CLUSTER') {
 
     app.use('/', router)
 
-    await mongoose.connect("mongodb://localhost:27017/user");
+    await mongoose.connect(process.env.MONGO_DB);
     console.log("Database connected!");
 
     const expressServer = app.listen(process.env.PORT || 3000, () => {
